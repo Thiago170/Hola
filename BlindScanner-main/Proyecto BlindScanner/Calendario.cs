@@ -24,12 +24,13 @@ namespace Proyecto_BlindScanner
             this.Hide();
         }
 
-        private void Calendario_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            for (int f = 1; f <= 96; f++)
-            {
+            PantallaCompra PC = new PantallaCompra();
+            PC.Visible = true;
+            this.Hide();
 
-            }
+
         }
     }
 }

@@ -31,11 +31,8 @@ namespace Proyecto_BlindScanner
         {
             this.btnVolver = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Actividades = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVolver
@@ -50,60 +47,41 @@ namespace Proyecto_BlindScanner
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(4, 2);
-            this.monthCalendar1.Location = new System.Drawing.Point(131, 13);
+            this.monthCalendar1.Location = new System.Drawing.Point(286, 69);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(135, 333);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.button1.Location = new System.Drawing.Point(546, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 53);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Lista de compras";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // button2
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Hora,
-            this.Actividades});
-            this.dataGridView1.Location = new System.Drawing.Point(131, 361);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 260);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // Hora
-            // 
-            this.Hora.HeaderText = "Hora";
-            this.Hora.Name = "Hora";
-            this.Hora.ReadOnly = true;
-            // 
-            // Actividades
-            // 
-            this.Actividades.HeaderText = "Actividades";
-            this.Actividades.Name = "Actividades";
-            this.Actividades.Width = 500;
+            this.button2.Location = new System.Drawing.Point(173, 127);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 53);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Alarmas de medicación";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Calendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 633);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.btnVolver);
             this.Name = "Calendario";
             this.Text = "Calendario";
-            this.Load += new System.EventHandler(this.Calendario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -111,9 +89,7 @@ namespace Proyecto_BlindScanner
 
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Actividades;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
